@@ -1,8 +1,8 @@
 class Dog
   @@all = []
-
-  def initialize
-
+  attr_accessor :name
+  def initialize(name)
+    @@all << @name
   end
 
   def self.clear_all
